@@ -1,0 +1,11 @@
+body {
+	box-sizing: border-box;
+}
+.container {
+	margin-top: 10px;
+	text-decoration: none;
+	text-align: center;
+}
+#dead {
+	color: red;
+}

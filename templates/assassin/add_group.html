@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Add a group | Assassin</title>
+        <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" />
+    </head>
+
+    <body>
+        <h1>Add a Group</h1>
+
+        <form class="form-horizontal" method="POST" action="/assassin/add_group/">
+            {% csrf_token %}
+
+            {% for field in form.visible_fields %}
+                <div class="form-group">
+                    {{ field.errors }}
+                    {{ field }}
+                    {{ field.help_text }}
+                </div>
+            {% endfor %}
+            <input class="btn btn-default" type="submit" name="submit" value="Create Group" />
+        </form>
+    </body>
+
+</html>
