@@ -1,7 +1,6 @@
 venv
 *.pyc
 staticfiles
-portfolio
 blog
 
 # Byte-compiled / optimized / DLL files
